@@ -1,9 +1,9 @@
 name: deployDist
 on:
-  - push:
-      branches:
-        - main
-  - workflow_dispatch
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   test:
@@ -22,4 +22,4 @@ jobs:
       - name: Run greeting script
         run: |
           echo "Hello, World!"
-          echo "This is a greeting from GitHub Actions."  
+          echo "This is a greeting from GitHub Actions."
